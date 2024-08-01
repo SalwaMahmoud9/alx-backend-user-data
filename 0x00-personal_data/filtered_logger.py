@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""filter"""
+"""filtered_logger"""
 import os
 import re
 import logging
