@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Route module for the API
+app
 """
 from os import getenv
 
@@ -34,28 +34,28 @@ elif getenv('AUTH_TYPE') == 'session_db_auth':
 
 @app.errorhandler(404)
 def not_found(error) -> str:
-    """ Not found handler
+    """ not_found
     """
     return jsonify({"error": "Not found"}), 404
 
 
 @app.errorhandler(401)
 def unauthorized_error(error) -> str:
-    """ Unauthorized handler
+    """ unauthorized_error
     """
     return jsonify({"error": "Unauthorized"}), 401
 
 
 @app.errorhandler(403)
 def forbidden_error(error) -> str:
-    """ Forbidden handler
+    """ forbidden_error
     """
     return jsonify({"error": "Forbidden"}), 403
 
 
 @app.before_request
 def before_request() -> None:
-    """ Filter for request
+    """ before_request
     """
     request_path_list = [
         '/api/v1/status/',
