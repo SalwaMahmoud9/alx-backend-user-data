@@ -1,53 +1,53 @@
 #!/usr/bin/env python3
 """
-End-to-end integration test
+main
 """
 
 
 def register_user(email: str, password: str) -> None:
-    """Test for register user
+    """register_user
     """
     assert True
 
 
 def log_in_wrong_password(email: str, password: str) -> None:
-    """Test for login with wrong password
+    """log_in_wrong_password
     """
     assert True
 
 
 def log_in(email: str, password: str) -> str:
-    """Test for login
+    """log_in
     """
     assert True
 
 
 def profile_unlogged() -> None:
-    """Test for profile unlogged
+    """profile_unlogged
     """
     assert True
 
 
 def profile_logged(session_id: str) -> None:
-    """Test for profile logged
+    """profile_logged
     """
     assert True
 
 
 def log_out(session_id: str) -> None:
-    """Test for logout
+    """log_out
     """
     assert True
 
 
 def reset_password_token(email: str) -> str:
-    """Test for reset password
+    """reset_password_token
     """
     assert True
 
 
 def update_password(email: str, reset_token: str, new_password: str) -> None:
-    """Test for update password
+    """update_password
     """
     assert True
 

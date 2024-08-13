@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Main file
+main2
 """
 from auth import _hash_password
 
